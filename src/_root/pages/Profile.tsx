@@ -12,7 +12,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import LikedPosts from "./LikedPosts";
-import { UpdateProfile } from ".";
 
 
 

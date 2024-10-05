@@ -4,13 +4,11 @@ import {
   useQuery,
   useMutation,
   useInfiniteQuery,
-  UseInfiniteQueryOptions,
   useQueryClient,
 } from "@tanstack/react-query";
 import { createPost, createUserAccount, deletePost, deleteSavedPost, getCurrentUser, getInfinitePosts, getPostById, getRecentPosts, getUserById, getUsers, likePost, savePost, searchPosts, signInAccount, signOutAccount, updatePost, updateUser } from "../appwrite/api";
 import { INewPost, INewUser, IUpdatePost, IUpdateUser } from "@/types";
 import { QUERY_KEYS } from "./queryKeys";
-import { Models } from "appwrite";
 
 export const useCreateUserAccount = () => {
   return useMutation({
